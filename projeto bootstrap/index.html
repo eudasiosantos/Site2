@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>titulo da pagina</title>
+		<meta charset="utf-8">
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/responsividade.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/font-awesome/css/font-awesome.min.css">
+		<!-- java script -->
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="col-12">
+			<header>
+				<!-- navbar -->
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				  <a class="navbar-brand bg-ligth" href="#">Animes</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link bg-ligth" href="#">Início<span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link bg-ligth" href="#">Lançamentos</a>
+				      </li>
+					  <li class="nav-item">
+				        <a class="nav-link bg-ligth" href="#reco">Recomendados</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link disabled " href="#"><i class="fa fa-line-chart" aria-hidden="true"></i>Em alta</a>
+				      </li>
+				    </ul>
+				    <form class="form-inline my-2 my-lg-0">
+				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				    </form>
+				  </div>
+				</nav>
+				<p>
+					<div class="row">
+						<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<img class="col-10 col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 animated zoomIn" src="img/logo.png">
+						</div>
+						<div class="social col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<ul class="">
+								<li>
+									<a href="#"><i class="fa fa-facebook-official mr-2" aria-hidden="true"></i>Facebok</a>
+									<a href="#"><i class="fa fa-twitter mr-2" aria-hidden="true"></i>Twitter</a>
+									<a href="#"><i class="fa fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</p>
+			</header>
+			<div class="col-md-12">
+				<!-- carrousel -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+			    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			   		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				   	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+			  		<div class="carousel-inner">
+						<div class="carousel-item active">
+				      		<img class="d-block w-100" src="img/dbs.png" alt="First slide">
+				      		<div class="carousel-caption d-none d-md-block text-ligth">
+					      		<h4 class="cimamodal">Conheça os melhores animes</h4>
+					   		</div>
+						</div>
+				    <div class="carousel-item">
+				      	<img class="d-block w-100" src="img/boku no hero.png" alt="Second slide">
+				      	<div class="carousel-caption d-none d-md-block text-primay">
+				      		<h4 class="cimamodal">Aqui você encontrará otimas recomendações</h4>
+					  	</div>
+				    </div>
+						<div class="carousel-item">
+					      	<img class="d-block w-100" src="img/naruto.png" alt="Third slide">
+					      	<div class="carousel-caption d-none d-md-block text-dark">
+					      		<h4  class="cimamodal">Conheça os melhores animes</h4>
+					      	</div>
+					    </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary botao-modal" data-toggle="modal" data-target="#exampleModalCenter">
+					  Lançamentos
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalCenterTitle">Lista da temporada de outono</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					    	<p>1.Sword Art Online 3ª temporada - Alicization</p>
+							<p>2. To Aru Majutsu no Index 3ª temporada</p> 
+							<p>3. Jojo Bizarre Adventures Part 5: Golden Wind</p>
+							<p>4. Tokyo Goul:Re 2ª temporada</p>
+							<p>5. Golden Kamuy 2ª temporada</p>
+							<p>6. Beatless Final Stage</p>
+							<p>7. Uchu Senkan Tiramisu 2ª temporada</p>
+							<p>8. Gurazeni 2ª temporada</p>
+							<p>9. Tensei Shitara Slime Datta Ken</p>
+							<p>10. Radiant</p>
+							<p>11. SSSS. Gridman</p>
+							<p>12. Release the Spyce</p>
+							<p>13. RerideD</p>
+							<p>14. Kishuku Gakkou no Juliet</p>
+							<p>15. Ulysses: Jehanne D'arc</p>
+							<p>16. Seishun Buta Yarou wa Bunny Girl</p>
+							<p>17. Ore ga Suki nano wa Imouto</p>
+							<p>18. Yagate Kimi ni Naru</p>
+							<p>19. Zaze ga Tsuyoku</p>
+							<p>20. Irozuku Sekai no Shita Kara</p>
+							<p>21. Goblin Slayer</p>
+							<P>22. Fairy Tail 2018</P>
+							<p>23. Gyakuten Saiban 2</p>
+							<p>24. Souten no Ken 2</p>
+							<p>25. Senran Kagura 2ª temporada</p>
+							<p>26. Sora to Umi no Aida</p>
+							<p>27. Hangyakusei Million Arthur</p>
+							<p>28. Conception</p>
+							<p>29. Karakuri Circus</p>
+							<p>30. Double Decker</p>
+							<p>31. Bakumatsu</p>
+							<p>32. Ingress the Animation</p> 
+							<p>33. Merc Story</p>
+							<p>34. Akanesasu Shoujo</p>
+							<p>35. Uchi no Maid</p>
+							<p>36. Beelzebub-jou</p>
+							<p>37. Gakuen Basara</p>
+							<p>38. Dakaretai Otoko 1-i ni Odosarete Imasu</p>
+							<p>39. Tsurune</p>
+							<p>40. Tonari no Kyuuketsuki</p>
+							<p>41. Hinomaru Zumou</p>
+							<p>42. Anima Yell!</p>
+							<p>43. Zombieland Saga</p>
+							<p>44. Castlevania Parte 2</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<!-- accordion-->
+			<section>
+				<div class="social m-5 col-md-10 col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="accordion ">
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          O que é anime?				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+				      <div class="card-body">
+				        <p>Anime é um termo que define os desenhos animados de origem japonesa e também os elementos relacionados a estes desenhos. No Japão, anime se refere à animação em geral.</p>
+
+
+						<p>O anime é tradicionalmente desenhado a mão. Porém, com o desenvolvimento dos recursos tecnológicos de animação, principalmente a partir da década de 1990, muitos animes passaram a ser produzidos em computadores.</p>
+
+
+						<p>Os temas abordados nos animes são bem variados (dramas, ficção, terror, aventura, psicologia, romance, comportamento, mitologia, etc.). Outra importante característica dos animes atuais é a ocorrência de elementos tecnológicos nos enredos das histórias.</p>
+
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Alguns gêneros de animes
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body">
+			    		Animes do tipo shounen.
+						Animes do tipo shoujo.
+						Animes do tipo seinen.
+						Animes do tipo josei.
+						Animes do tipo harém.
+						Gênero ação.
+						Gênero aventura.
+						Comédia.
+						Demência.
+						Demônios.
+						Drama.
+						Fantasia.
+						Históricos.
+						Horror ou terror.
+						Kodomo – Para crianças.
+						Mahou – mágica.
+						Artes marciais.
+						Mecha – robôs.
+						Militar.
+						Música e bandas.
+						Mistério.
+						Paródia.
+						Policial.
+						Psicológico.
+						Romance.
+						Samurais.
+						Escolares.
+						Ficção científica.
+						Slice of life.
+						Espaço.
+						Esporte.
+						Super poderes.
+						Sobrenatural.
+						Thriller ou suspense.
+						Vampiros.
+						Carros.
+						Animes do tipo shoujo ai e yuri.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h5 class="mb-0">
+				        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				         Características básicas de um Anime
+				        </button>
+				      </h5>
+				    </div>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <div class="card-body">
+				        <p>Os animes possuem características que os diferenciam dos desenhos ocidentais.</p>
+						<p>Olhos com diversas características (como grandes, pequenos, muito grandes ou muito pequenos, rasgados, etc) de diversas cores e tipos, dando assim diversas expressões e características ao personagem, expressando vários sentimentos através dos olhos. Como dizem os japoneses “os olhos são a janela da alma”. </p>
+						<p>O cabelo de vários tamanhos, formas e cores, até sem cabelo ás vezes. Com vários acessórios .O corpo dos personagens normalmente são esculturais, musculosos e bonitos. As vezes não.</p>
+						<p>As roupas dependem muito do anime, podem ser coloridas e chamativas, como podem ser simples e discretasm. O tipo do anime é que vai colocar esse critério.</p>
+						<p>A personalidade das personagens não são diferentes de anime para anime, as vezes. Mas, são bem ricas e muito bem trabalhadas, o que coloca os animes a frente dos desenhos ocidentais.</p>
+						<p>A voz é sempre esquesita, engraçada e etc.</p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</section>
+			<section class="row margin-sections">
+				<div class="col-md-12 text-center mt-2 div-cards"><h3>Lançamentos</h3></div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+						<img class="card-img-top" src="img/lançamentos/reride.jpg" alt="Card image cap">
+						<figcaption>
+							Episódios: 12
+							Produtores: Half HP Studio, Kadokawa
+							Licenciadores: Funimation
+							Estúdios: GEEKTOYS
+							Gêneros: Ação , Ficção científica , Drama
+							Duração: 23 min. por ep.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse">Quando o engenheiro de desenvolvimento Delida acorda no futuro após sua uma hibernação, mas percebe que sua namorada não estava lá, então ele decide voltar 10 anos no tempo para “aquele incidente” para manter a sua promessa com ela. A chave para trazer-la de volta é o salto temporal.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+					  	<img class="card-img-top" src="img/lançamentos/sword.jpg" alt="Card image cap">
+					  	<figcaption class="fig">
+							Numero de Episódios: 53
+							Status: Lançamento
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Ação, Aventura, Fantasia, Game, Romance.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse">Nova temporada de Sword Art Online, continuando de onde o filme parou. A história foca em um mundo habitado por inteligências artificiais, em que o protagonista acaba preso depois de um acidente grave. Vai ter algumas novidades, como sangue e dor realista, já que o mundo é feito para emular o real com perfeição</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/lançamentos/irozuku.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: ??
+							Status: Lançamento
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Drama, Magia, Romance.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse"> Situado na cidade de Nagasaki, a história se passa em um mundo onde uma quantidade minúscula de magia permanece na vida cotidiana. Hitomi Tsukishiro é uma descendente de 17 anos de uma família de bruxas que cresceu sem emoções. Sentindo pena do futuro de sua neta, Kohaku, uma grande bruxa, manda Hitomi para o passado, o ano de 2018. A história segue o crescimento de Hitomi como pessoa, junto de sua avó com 17 anos de idade e seus amigos de clube.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				 		<img class="card-img-top" src="img/lançamentos/gurazeni.png" alt="Card image cap">
+				 		<figcaption>
+							Numero de Episódios: 12
+							Status: Completo
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Comédia, Esportes, Drama, Seinen, Adaptação de Manga.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse">Esta é a história de Natsunosuke Honda, um jogador profissional de beisebol – um arremessador que joga profissionalmente em uma equipe chamada Spiders por 8 anos. A equipe opera como uma sociedade altamente estratificada, onde o desempenho do jogador determina seu salário anual. Natsunosuke é um dos jogadores mais bem pagos do jogo. Ele mede o quanto os jogadores são bons com quanto dinheiro eles ganham, e ele pretende estar no topo e ficar lá, e como tal está sempre procurando jogadores para desafiar e fazer tudo para garantir que ele seja melhor do que eles.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/lançamentos/golden.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: 12
+							Status: Completo
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Ação, Aventura, Seinen, Adaptação de Manga.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse">Início do século XX. O veterano na guerra russo-japonesa Saichi “Imortal” Sugimoto está em meio à escassa existência pacífica na região de Hokkaido, que se tornou um lugar selvagem devido à corrida do ouro no pós-guerra. Acidentalmente ele descobre um mapa para uma riqueza escondida chamada Ouro de Ainu, e sai numa aventura traiçoeira para encontrá-la. Sugimoto precisará de toda a sua habilidade e sorte para sobreviver, junto da ajuda de uma garota chamada Asirpa, nativa da região de Ainu.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/lançamentos/globin-slayer.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: ??
+							Status: Lançamento
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Ação, Fantasia
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p class="font-sinopse">Uma sacerdotisa formou seu primeiro grupo de aventureiros, mas, quase imediatamente se encontram em apuros pelos goblins. E o Goblin Slayer é quem vem ao resgate – um homem que tem dedicado sua vida a exterminação de todos os goblins, através de qualquer meio necessário.</p>
+				  </div>
+				</div>
+				<!-- Fim dos cards -->
+			</section>
+			<section class="row margin-sections">
+				<div class="col-md-12 text-center mt-2 div-cards"><h3 id="reco">Recomendados</h3></div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card1.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: 13
+							Status: Completo
+							Lançamento: 2016
+							Áudio: Legendado
+							Gêneros: Ação, Comédia, Escolar, Shounen, Super-Poderes.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p>A história situa-se nos dias atuais, exceto que indivíduos com super-poderes tornaram-se comuns por todo o mundo. Um garoto chamado Izuku Midoriya não possui poderes, mas continua a sonhar em se tornar um herói</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card2.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: 24
+							Status: Completo
+							Lançamento: 2018
+							Áudio: Legendado
+							Gêneros: Mecha, Ficção.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p>Eles sonham um dia voar pelo céu sem fim, mesmo cientes do quão imenso é o céu além da vidraça que bloqueia seu voo.</p>
+
+					<p>Futuro distante: a humanidade se estabeleceu na cidade-fortaleza de Plantation, erguida sobre os destroços da guerra, e a civilização floresceu. Nessa cidade, há o Mistilteinn, um quartel de pilotos também conhecido como Gaiola. É lá que as crianças vivem… Alheios ao mundo de fora e da vastidão dos céus. Sua única missão em vida é lutar.</p>
+
+					<p>Seus inimigos são os Kyoryu, gigantescos organismos misteriosos. As crianças operam robôs chamados FRANXX para enfrentar esses inimigos desconhecidos, crentes de que esse é seu objetivo de vida</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card3.jpg" alt="Card image cap">
+				  		<figcaption>
+							Numero de Episódios: 24 + Ovas
+							Status: Completo
+							Lançamento: 2014
+							Áudio: Legendado
+							Gêneros: Ação , Aventura , Fantasia , Shounen , Sobrenatural.
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p>Os “Sete Pecados Capitais”, um grupo maligno de cavaleiros que conspiraram para derrubar o reino de Britânia, supostamente foram erradicados pelos Cavaleiros Divinos, embora ainda existam rumores de que eles estão vivos. Dez anos depois, os Cavaleiros Divinos realizaram um golpe de estado e assassinaram o rei, se tornando os novos e tiranos governantes do reino. Elizabeth, a única filha do rei, sai em uma jornada para encontrar os “Sete Pecados Capitais”, e recrutá-los para que possam ajudar a tomar o reino de volta.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card4.jpg" alt="Card image cap">
+				  		<figcaption>
+				  			Número de Episódios: 220
+				  			Titulo: Naruto Clássico
+							Status: Completo
+							Genero: Ação, Artes Marciais, Aventura, Shoujo, Superpoder
+							Áudio: Dublado
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p>Naruto Uzumaki, um ninja hiperativo e junta-cabeças, vive em Konohagakure, o Hidden Leaf Village. Momentos antes do seu nascimento, um demônio enorme conhecida como a Kyuubi, a Raposa de Nove Caudas, atacou Konohagakure e causou estragos. A fim de colocar um fim à violência da Kyuubi, o líder da vila, o Hokage 4, sacrificou sua vida e selou a besta monstruosa dentro do Naruto recém-nascido. Evitado por causa da presença da Kyuubi dentro dele, Naruto se esforça para encontrar seu lugar na aldeia. Ele se esforça para se tornar o Hokage de Konohagakure, e ele encontra muitos amigos e inimigos ao longo do caminho.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card5.jpg" alt="Card image cap">
+				  		<figcaption>
+				  			Titulo: Koutetsujou No Kabaneri
+							Genero: Ação , Drama , Fantasia , Shounen , Terror
+							Estudio: Wit Studio
+							Episódios: 12
+							Ovas 0
+							Filmes 0
+							Ano: 2016
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p> O mundo está no meio da revolução industrial e surge um monstro que só pode ser vencido por um golpe em seu coração, que é protegido por uma camada de ferro. Ao infectar humanos com sua mordida, o monstro pode criar criaturas mortas-vivas agressivas conhecidas como Kabane. Na ilha de Hinomoto, localizada no extremo oriente, as pessoas construíram estações para se abrigar dessas criaturas.</p>
+				  </div>
+				</div>
+				<div class="card m-4 col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="width: 18rem;">
+					<figure class="foto">
+				  		<img class="card-img-top" src="img/recomendados/card6.jpg" alt="Card image cap">
+				  		<figcaption>
+				  			Titulo: Tokyo Ghoul 1 Temporada
+							Formato: Anime
+							Genero: Ação , Drama , Mistério , Sobrenatural , Terror
+							Estudio: Pierrot
+							Episódios: 12
+							Ovas 0
+							Filmes 0
+							Ano: 2014
+						</figcaption>
+					</figure>
+				  <div class="card-body">
+				    <p class="card-text"><h4>Sinopse</h4></p>
+				    <p>O suspense de horror / fantasia sombria história é definida em Tóquio, que é assombrado pelo misterioso "fantasmas" que estão devorando seres humanos. As pessoas estão tomado pelo medo destes fantasmas cujas identidades são mascarados em mistério. Um estudante universitário comum chamado Kaneki encontra Rize, uma menina que é um ávido leitor como ele, no café que frequenta. Pouco ele percebe que seu destino irá mudar durante a noite.</p>
+				  </div>
+				</div>
+				<!-- Fim dos cards -->
+			</section>
+			<button type="submit" class="btn btn-outline-primary botao-mais"><a href="Recomendados.html"> Mais</a></button>
+			<section class="margin-sections">
+				<!-- formulario -->
+				<form class="needs-validation" novalidate>
+				  <div class="form-row">
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustom01">First name</label>
+				      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+				      <div class="valid-feedback">
+				        Looks good!
+				      </div>
+				    </div>
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustom02">Last name</label>
+				      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+				      <div class="valid-feedback">
+				        Looks good!
+				      </div>
+				    </div>
+				    <div class="col-md-4 mb-3">
+				      <label for="validationCustomUsername">Username</label>
+				      <div class="input-group">
+				        <div class="input-group-prepend">
+				          <span class="input-group-text" id="inputGroupPrepend">@</span>
+				        </div>
+				        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+				        <div class="invalid-feedback">
+				          Please choose a username.
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-row">
+				    <div class="col-md-6 mb-3">
+				      <label for="validationCustom03">City</label>
+				      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid city.
+				      </div>
+				    </div>
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom04">State</label>
+				      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid state.
+				      </div>
+				    </div>
+				    <div class="col-md-3 mb-3">
+				      <label for="validationCustom05">Zip</label>
+				      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+				      <div class="invalid-feedback">
+				        Please provide a valid zip.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="form-check">
+				      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+				      <label class="form-check-label" for="invalidCheck">
+				        Agree to terms and conditions
+				      </label>
+				      <div class="invalid-feedback">
+				        You must agree before submitting.
+				      </div>
+				    </div>
+				  </div>
+				  <button class="btn btn-primary" type="submit">Submit form</button>
+				</form>
+
+				<script>
+				// Example starter JavaScript for disabling form submissions if there are invalid fields
+				(function() {
+				  'use strict';
+				  window.addEventListener('load', function() {
+				    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+				    var forms = document.getElementsByClassName('needs-validation');
+				    // Loop over them and prevent submission
+				    var validation = Array.prototype.filter.call(forms, function(form) {
+				      form.addEventListener('submit', function(event) {
+				        if (form.checkValidity() === false) {
+				          event.preventDefault();
+				          event.stopPropagation();
+				        }
+				        form.classList.add('was-validated');
+				      }, false);
+				    });
+				  }, false);
+				})();
+				</script>
+			</section>
+			<footer class="rodape">
+				<div class="row social-rodape">
+					<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<h4 class=" ml-4">Social</h4>
+						<ul>
+							<li class="ponto">
+								<a href="">Facebook</a>
+							</li>
+							<li class="ponto">
+								<a href="">Instagram</a>
+							</li>
+							<li class="ponto">
+								<a href="">Youtube</a>
+							</li>
+							<li class="ponto">
+								<a href="">Twiter</a>
+							</li>
+							<li class="ponto">
+								<a href="">WhatsApp</a>
+							</li>
+							<li class="ponto">
+								<a href="">Discord</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<h4>Temporadas de lançamento</h4>
+						<ol>
+							<li class="afastar"><a href="">Janeiro - Temporada de Inverno</a></li>
+							<li class="afastar"><a href="">Abril - Temporada de Primavera</a></li>
+							<li class="afastar"><a href="">Julho - Temporada de Verão</a></li>
+							<li class="afastar"><a href="">Outubro -Temporada de Outono</a></li>
+						</ol>
+					</div>
+				</div>
+				<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.276407713855!2d-39.308122385888865!3d-4.3591790968317525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bf074225dbee5b%3A0x7f8779dff7743eb5!2sR.+Joaquim+Cust%C3%B3dio+-+Alto+Guaramiranga%2C+Canind%C3%A9+-+CE%2C+62700-000!5e0!3m2!1spt-BR!2sbr!4v1543277959686" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="mt-3 ml-3"></iframe>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

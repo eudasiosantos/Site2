@@ -1,0 +1,40 @@
+/* Responsividade com @media */
+/* Galaxy S5*/
+@media screen and(max-width: 540px){
+	.social i{
+		color: #000;
+		font-size: 15px !important;
+	}
+}
+@media screen and(min-width: 750px) and (max-width: 1024px){
+	.botao-modal{
+		position: absolute;
+		top: 40%;
+		left: 40%;
+	}
+	.texto-slide h3,h2{
+		font-size: 2em;
+		text-align: center;
+	}
+	.texto-slide{
+		position: absolute;
+		top: 20%;
+		left: 30%;
+	}
+}
+@media screen and(min-width: 350px) and (max-width: 700px){
+	.botao-modal{
+		position: relative;
+		top: 40%;
+		left: 40%;
+	}
+	.texto-slide h3,h2{
+		font-size: 2em;
+		text-align: center;
+	}
+	.texto-slide{
+		position: absolute;
+		top: 20%;
+		left: 10%;
+	}
+}
